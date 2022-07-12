@@ -1,0 +1,2 @@
+void llenar_matriz(int mat[][20]);
+void imprimir(int mat[][20]);
