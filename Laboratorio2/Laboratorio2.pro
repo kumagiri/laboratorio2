@@ -4,6 +4,11 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += \
-        main.cpp
+        main.cpp \
+        suma.cpp
 
 RESOURCES +=
+
+HEADERS += \
+    11. \
+    headers/suma.h
