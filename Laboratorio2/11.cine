@@ -1,2 +1,5 @@
-void llenar_matriz(int mat[][20]);
-void imprimir(int mat[][20]);
+void llenar_matriz(int** mat);//inicia nuestra matriz solo se hara una vez en todo el programa
+void imprimir(int** mat);// imprime lo que tenemos en nuestra matriz
+void reservar(int** mat);// hace reserva correspondiente
+void quitar(int** mat);// quita nuestra reserva
+int letra_numero(char* ptr);
