@@ -1,6 +1,8 @@
 #include <iostream>
+#include "11.cine"
 using namespace std;
 
+int mult(int a,int b);
 //Estas son las funciones del punto 11
 //1
 void llenar_matriz(int** mat){
@@ -56,30 +58,51 @@ void imprimir(int** mat){
          }
     }
 
-void reservar(int** mat){
+void reservar(int** mat,int* ptrfila,int* ptrcolumna){
+
+
+     *(*(mat+*ptrfila)+*ptrcolumna)=1;
+}
+
+void escoger_asiento(int* ptrfila,int* ptrcolumna){
     char fila=0;
     int columna=0;
     cout<<"Por favor ingrese la fila de la A a la O: ";
     cin>>fila;
     switch (fila) {
-                    case 'A':fila=0;break;
-                    case 'B':fila=1;break;
-                    case 'C':fila=2;break;
-                    case 'D':fila=3;break;
-                    case 'E':fila=4;break;
-                    case 'F':fila=5;break;
-                    case 'G':fila=6;break;
-                    case 'H':fila=7;break;
-                    case 'I':fila=8;break;
-                    case 'J':fila=9;break;
-                    case 'K':fila=10;break;
-                    case 'L':fila=11;break;
-                    case 'M':fila=12;break;
-                    case 'N':fila=13;break;
-                    case 'O':fila=14;break;
-    }
+                    case 'A':*ptrfila=0;break;
+                    case 'B':*ptrfila=1;break;
+                    case 'C':*ptrfila=2;break;
+                    case 'D':*ptrfila=3;break;
+                    case 'E':*ptrfila=4;break;
+                    case 'F':*ptrfila=5;break;
+                    case 'G':*ptrfila=6;break;
+                    case 'H':*ptrfila=7;break;
+                    case 'I':*ptrfila=8;break;
+                    case 'J':*ptrfila=9;break;
+                    case 'K':*ptrfila=10;break;
+                    case 'L':*ptrfila=11;break;
+                    case 'M':*ptrfila=12;break;
+                    case 'N':*ptrfila=13;break;
+                    case 'O':*ptrfila=14;break;
+                    case 'a':*ptrfila=0;break;
+                    case 'b':*ptrfila=1;break;
+                    case 'c':*ptrfila=2;break;
+                    case 'd':*ptrfila=3;break;
+                    case 'e':*ptrfila=4;break;
+                    case 'f':*ptrfila=5;break;
+                    case 'g':*ptrfila=6;break;
+                    case 'h':*ptrfila=7;break;
+                    case 'i':*ptrfila=8;break;
+                    case 'j':*ptrfila=9;break;
+                    case 'k':*ptrfila=10;break;
+                    case 'l':*ptrfila=11;break;
+                    case 'm':*ptrfila=12;break;
+                    case 'n':*ptrfila=13;break;
+                    case 'o':*ptrfila=14;break;
+}
+
     cout<<"Por favor ingrese el asiento del 1 al 20: ";
     cin>>columna;
-
-     *(*(mat+fila)+columna)=1;
+    *ptrcolumna=columna-1;
 }

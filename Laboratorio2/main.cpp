@@ -8,7 +8,9 @@ int main()
 
     int aplicacion=0,bandera=0,asiento=0,reserva=0;
     int** sala;
-    char fila=0;
+    int fila=0, columna=0;
+
+
 
     sala= new int*[15];
     for(int i=0;i<20;i++){
@@ -16,7 +18,8 @@ int main()
     }
     llenar_matriz(sala);//funcion 1
     imprimir(sala);//funcion 2
-    reservar(sala);
+    escoger_asiento(&fila,&columna);
+    reservar(sala,&fila,&columna);
     imprimir(sala);
     return 0;
 }
