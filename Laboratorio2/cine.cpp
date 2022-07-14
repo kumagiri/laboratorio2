@@ -2,7 +2,7 @@
 #include "11.cine"
 using namespace std;
 
-int mult(int a,int b);
+
 //Estas son las funciones del punto 11
 //1
 void llenar_matriz(int** mat){
@@ -60,8 +60,12 @@ void imprimir(int** mat){
 
 void reservar(int** mat,int* ptrfila,int* ptrcolumna){
 
-
      *(*(mat+*ptrfila)+*ptrcolumna)=1;
+}
+
+void quitar(int** mat,int* ptrfila,int* ptrcolumna){
+
+    *(*(mat+*ptrfila)+*ptrcolumna)=0;
 }
 
 void escoger_asiento(int* ptrfila,int* ptrcolumna){
@@ -105,4 +109,15 @@ void escoger_asiento(int* ptrfila,int* ptrcolumna){
     cout<<"Por favor ingrese el asiento del 1 al 20: ";
     cin>>columna;
     *ptrcolumna=columna-1;
+}
+
+int menu(){
+   int m=0;
+    cout<<"Que accione desea hacer: \n"<<
+         "1.Hacer reserva \n"<<
+         "2.Quitar reserva \n"<<
+         "3.Vaciar sala\n"<<
+         "4.salir: ";
+    cin>>m;
+   return m;
 }

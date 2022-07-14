@@ -5,10 +5,12 @@ CONFIG -= qt
 
 SOURCES += \
         cine.cpp \
+        cuadrado.cpp \
         main.cpp
 
 RESOURCES +=
 
 HEADERS += \
     11.cine \
+    12.cuadrado \
     headers/suma.h

@@ -1,5 +1,6 @@
 void llenar_matriz(int** mat);//inicia nuestra matriz solo se hara una vez en todo el programa
 void imprimir(int** mat);// imprime lo que tenemos en nuestra matriz
 void reservar(int** mat,int* ptrfila, int* ptrcolumna);// hace reserva correspondiente
-void quitar(int** mat);// quita nuestra reserva
+void quitar(int** mat,int* ptrfila, int* ptrcolumna);// quita nuestra reserva
 void escoger_asiento(int* ptrfila,int* ptrcolumna);
+int menu();
