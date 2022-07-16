@@ -54,7 +54,8 @@ int main()
         cuadro[i]=new int[n];
 
     }
-
+    llenar_matriz(cuadro,n);
+    imprimir_matriz(cuadro,n);
     for(int i=0;i<n;i++){
         delete[] cuadro[i];
     }

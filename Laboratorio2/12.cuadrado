@@ -1,1 +1,2 @@
 void llenar_matriz(int** mat,int n);
+void imprimir_matriz(int** mat,int n);
