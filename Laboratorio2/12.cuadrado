@@ -1,0 +1,1 @@
+void llenar_matriz(int** mat,int n);

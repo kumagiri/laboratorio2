@@ -1,5 +1,5 @@
 #include <iostream>
-#include "11.cine"
+
 using namespace std;
 
 
@@ -58,16 +58,19 @@ void imprimir(int** mat){
          }
     }
 
+//3
 void reservar(int** mat,int* ptrfila,int* ptrcolumna){
 
      *(*(mat+*ptrfila)+*ptrcolumna)=1;
 }
 
+//4
 void quitar(int** mat,int* ptrfila,int* ptrcolumna){
 
     *(*(mat+*ptrfila)+*ptrcolumna)=0;
 }
 
+//5
 void escoger_asiento(int* ptrfila,int* ptrcolumna){
     char fila=0;
     int columna=0;
@@ -111,6 +114,7 @@ void escoger_asiento(int* ptrfila,int* ptrcolumna){
     *ptrcolumna=columna-1;
 }
 
+//6
 int menu(){
    int m=0;
     cout<<"Que accione desea hacer: \n"<<

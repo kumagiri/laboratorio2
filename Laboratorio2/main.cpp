@@ -8,7 +8,7 @@ int main()
     /*11.cine
 
     int aplicacion=0,bandera=0;
-    int** sala;
+    int** sala=nullptr;
     int fila=0, columna=0;
 
 
@@ -35,9 +35,30 @@ int main()
    else if(aplicacion==4){
         bandera=1;
     }
-}*/
+}
+    for(int i=0;i<20;i++){
+        delete[] sala[i];
+    }
+    delete [] sala;*/
 
 /*12.cuadrado magico*/
+
+    int n=0;
+    int** cuadro=nullptr;
+
+    cout<<"Por favor ingrese el tamano del cuadrado que desea realizar: ";
+    cin>>n;
+
+    cuadro = new int*[n];
+    for(int i=0;i<n;i++){
+        cuadro[i]=new int[n];
+
+    }
+
+    for(int i=0;i<n;i++){
+        delete[] cuadro[i];
+    }
+    delete[]cuadro;
 
 
 
