@@ -1,6 +1,10 @@
+
 #include <iostream>
 #include "11.cine"
 #include "12.cuadrado"
+#include "14.giro"
+
+
 using namespace std;
 
 int main()
@@ -41,12 +45,15 @@ int main()
     }
     delete [] sala;*/
 
-/*12.cuadrado magico*/
 
-    int n=0;
+
+
+    /*12.cuadrado magico
+
+    int n=0,l=0;
     int** cuadro=nullptr;
-
-    cout<<"Por favor ingrese el tamano del cuadrado que desea realizar: ";
+    int* sum=nullptr;
+    cout<<"Por favor ingrese el numero de filas y columnas del cuadrado que desea realizar este del 2 en adelante: ";
     cin>>n;
 
     cuadro = new int*[n];
@@ -56,12 +63,38 @@ int main()
     }
     llenar_matriz(cuadro,n);
     imprimir_matriz(cuadro,n);
+    l=(n+n)+2;
+    sum= new int[l];
+
+    for(int i=0;i<l;i++){
+        *(sum+i)=0;
+    }
+    suma(cuadro,sum,n);
+    verificacion(sum,l);
     for(int i=0;i<n;i++){
         delete[] cuadro[i];
     }
     delete[]cuadro;
+    delete[] sum;*/
 
 
+    /*14 Giro matriz de 90°*/
 
+    int** mat=nullptr;
+    mat= new int*[5];
+    for(int i=0;i<5;i++){
+        mat[i]=new int[5];
+    }
+    llenar_mgiro(mat);
+    imprimir_mgiro(mat);
+    llenar_mgiro2(mat);
+    imprimir_mgiro90(mat);
+   // imprimir_mgiro270(mat);
+
+    for(int i=0;i<5;i++){
+        delete[] mat[i];
+    }
+    delete[]mat;
     return 0;
 }
+

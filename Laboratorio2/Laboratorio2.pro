@@ -6,6 +6,7 @@ CONFIG -= qt
 SOURCES += \
         cine.cpp \
         cuadrado.cpp \
+        giro.cpp \
         main.cpp
 
 RESOURCES +=
@@ -13,4 +14,5 @@ RESOURCES +=
 HEADERS += \
     11.cine \
     12.cuadrado \
+    14.giro \
     headers/suma.h

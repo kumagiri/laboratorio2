@@ -1,2 +1,4 @@
 void llenar_matriz(int** mat,int n);
 void imprimir_matriz(int** mat,int n);
+void suma(int** mat,int* sum,int n);
+void verificacion(int*sum,int l);

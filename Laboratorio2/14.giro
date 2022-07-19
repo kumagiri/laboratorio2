@@ -1,0 +1,5 @@
+void llenar_mgiro(int** mat);
+void llenar_mgiro2(int** mat);
+void imprimir_mgiro(int** mat);
+void imprimir_mgiro90(int** mat);
+void imprimir_mgiro270(int** mat);
