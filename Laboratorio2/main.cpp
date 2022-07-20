@@ -100,7 +100,7 @@ int main()
 
 
 
-    /*16.Caminos*/
+    /*16.Caminos
 
     int A=1,D=1,n=0,c=0;
     cout<<"por favor ingrese el tamano que tendra la cuadricula\n"
@@ -115,7 +115,7 @@ int main()
     factorial(&A,&D,&n);
     c=num_caminos(&A,&D);
     cout<<"El numero posible de caminos para tu cuadricula "<<n<<"x"<<n<<endl<<
-          "es de: "<<c<<endl;
+          "es de: "<<c<<endl;*/
     return 0;
 }
 
