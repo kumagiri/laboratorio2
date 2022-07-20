@@ -1,7 +1,7 @@
 #include <iostream>
 
 using namespace std;
-
+//1
 void llenar_mgiro(int** mat){
     int n=1;
     for(int i=0;i<5;i++){
@@ -12,7 +12,7 @@ void llenar_mgiro(int** mat){
        }
     }
 }
-
+//2
 void llenar_mgiro2(int** mat){
     int n=1;
     for(int i=4;i>=0;i--){
@@ -24,6 +24,7 @@ void llenar_mgiro2(int** mat){
     }
 }
 
+//3
 void llenar_mgiro3(int** mat){
     int n=1;
     for(int i=0;i<5;i++){
@@ -34,6 +35,7 @@ void llenar_mgiro3(int** mat){
        }
     }
 }
+//4
 void imprimir_mgiro(int** mat){
     cout<<"matriz original\n";
     for(int i=0;i<5;i++){
@@ -50,6 +52,8 @@ void imprimir_mgiro(int** mat){
 }
        cout<<endl;
 }
+
+//5
 void imprimir_mgiro90(int** mat){
     cout<<"matriz de 90\n";
     for(int i=4;i>=0;i--){
@@ -66,6 +70,7 @@ void imprimir_mgiro90(int** mat){
 }
     cout<<endl;
 }
+//6
 void imprimir_mgiro180(int** mat){
     cout<<"matriz de 180\n";
     for(int i=4;i>=0;i--){
@@ -83,6 +88,7 @@ void imprimir_mgiro180(int** mat){
        cout<<endl;
 }
 
+//7
 void imprimir_mgiro270(int** mat){
     cout<<"matriz de 270\n";
     for(int i=0;i<5;i++){

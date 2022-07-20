@@ -2,6 +2,7 @@
 
 using namespace std;
 
+//1
 void llenar_matriz(int** mat,int n){
     int f=0,b=0,c=0;
     cout<<"Ahora empezaremos a llenar el cuadrado magico\n"
@@ -44,6 +45,8 @@ void llenar_matriz(int** mat,int n){
        }
     }
 }
+
+//2
 void imprimir_matriz(int** mat,int n){
     for(int i=0;i<n;i++){
        for(int j=0;j<n;j++){
@@ -60,6 +63,7 @@ void imprimir_matriz(int** mat,int n){
 
 }
 
+//3
 void suma(int** mat,int* sum,int n){
     int k=0;
     //filas
@@ -117,6 +121,7 @@ void suma(int** mat,int* sum,int n){
     cout<<*(sum+k)<<endl;
 
 }
+//4
 void verificacion(int* sum,int l){
     int diferente=0;
     for(int i=0;i<l;i++){

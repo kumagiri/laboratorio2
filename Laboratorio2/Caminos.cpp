@@ -1,7 +1,7 @@
 #include <iostream>
 
 using namespace std;
-
+// 1
 void factorial(int* A,int* D,int* n){
     int c=0;
     c=(*n+*n);
@@ -17,7 +17,7 @@ void factorial(int* A,int* D,int* n){
 
     }
 }
-
+// 2
 int num_caminos(int* A,int*D){
 
     int c=0;

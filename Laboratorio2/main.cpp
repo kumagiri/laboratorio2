@@ -21,20 +21,20 @@ int main()
     for(int i=0;i<20;i++){
         sala[i]=new int[20];
     }
-    llenar_matriz(sala);//funcion 1
+    llenar_matriz(sala);
     while(bandera==0){
-    imprimir(sala);//funcion 2
-    aplicacion=menu();//funcion 6
+    imprimir(sala);
+    aplicacion=menu();
     if(aplicacion==1){
-       escoger_asiento(&fila,&columna);//funcion 5
-       reservar(sala,&fila,&columna);//funcion 3
+       escoger_asiento(&fila,&columna);
+       reservar(sala,&fila,&columna);
     }
     else if(aplicacion==2){
-        escoger_asiento(&fila,&columna);//funcion 5
-        quitar(sala,&fila,&columna);//funcion 4
+        escoger_asiento(&fila,&columna);
+        quitar(sala,&fila,&columna);
     }
    else if(aplicacion==3){
-        llenar_matriz(sala);//funcion 1
+        llenar_matriz(sala);
     }
    else if(aplicacion==4){
         bandera=1;
