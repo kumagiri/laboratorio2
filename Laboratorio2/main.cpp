@@ -3,7 +3,7 @@
 #include "11.cine"
 #include "12.cuadrado"
 #include "14.giro"
-
+#include "16.Caminos"
 
 using namespace std;
 
@@ -78,7 +78,7 @@ int main()
     delete[] sum;*/
 
 
-    /*14 Giro matriz de 90°*/
+    /*14 Giro matriz de 90°*
 
     int** mat=nullptr;
     mat= new int*[5];
@@ -89,12 +89,33 @@ int main()
     imprimir_mgiro(mat);
     llenar_mgiro2(mat);
     imprimir_mgiro90(mat);
-   // imprimir_mgiro270(mat);
-
+    llenar_mgiro(mat);
+    imprimir_mgiro180(mat);
+    llenar_mgiro3(mat);
+    imprimir_mgiro270(mat);
     for(int i=0;i<5;i++){
         delete[] mat[i];
     }
-    delete[]mat;
+    delete[]mat;*/
+
+
+
+    /*16.Caminos*/
+
+    int A=1,D=1,n=0,c=0;
+    cout<<"por favor ingrese el tamano que tendra la cuadricula\n"
+          "a la cual desea mirar el numero de caminos posibles\n "
+          "para llegrar del punto A al B\n";
+    cout<<"Ejemplo:\n"
+          "\nA _\n1|_|\n   B\n";
+    cout<<"\nPara una cuadricula de tamano 1 los caminos posibles\n"
+          "de A a B son: 2\n";
+    cout<<"Ahora ingresa el tamano:";
+    cin>>n;
+    factorial(&A,&D,&n);
+    c=num_caminos(&A,&D);
+    cout<<"El numero posible de caminos para tu cuadricula "<<n<<"x"<<n<<endl<<
+          "es de: "<<c<<endl;
     return 0;
 }
 

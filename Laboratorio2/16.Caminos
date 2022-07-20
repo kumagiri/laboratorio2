@@ -1,0 +1,2 @@
+void factorial(int* A,int* D,int* n);
+int num_caminos(int* A,int*D);
